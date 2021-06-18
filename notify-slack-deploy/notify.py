@@ -43,7 +43,7 @@ request = urllib.request.Request(
 )
 
 try:
-    with urllib.request.urlopen(req) as f:
+    with urllib.request.urlopen(request) as f:
         result = f.read()
     pprint(result)
 
