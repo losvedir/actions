@@ -42,10 +42,4 @@ request = urllib.request.Request(
     { "Content-Type": "application/json" }
 )
 
-try:
-    with urllib.request.urlopen(request) as f:
-        result = f.read()
-    pprint(result)
-
-except Exception as e:
-    pprint(e)
+urllib.request.urlopen(request)
